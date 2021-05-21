@@ -4,16 +4,16 @@ from gi.repository import Gtk
 
 class FileChooserWindow(Gtk.Window):
     def __init__(self):
-        Gtk.Window.__init__(self, title="FileChooser Example")
+        Gtk.Window.__init__(self, title="FileChooser")
 
         box = Gtk.Box(spacing=6)
         self.add(box)
 
-        button1 = Gtk.Button(label="Choose File")
+        button1 = Gtk.Button(label="File")
         button1.connect("clicked", self.on_file_clicked)
         box.add(button1)
 
-        button2 = Gtk.Button(label="Choose Folder")
+        button2 = Gtk.Button(label="Folder")
         button2.connect("clicked", self.on_folder_clicked)
         box.add(button2)
     
